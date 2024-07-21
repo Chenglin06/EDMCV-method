@@ -13,7 +13,7 @@ def load_data(batch_size, num_worker):
     all_data = []
     
     #esm后的编码encode_data_2570
-    for lin in open('../../esm_encode/encode_data_1708','r',encoding = 'utf-8'):
+    for lin in open('../esm_encode/encode_data_1708','r',encoding = 'utf-8'):
         name,label,data = lin.strip().split('\t')
         data = eval(data)
         all_name.append(name)

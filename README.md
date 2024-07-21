@@ -27,7 +27,7 @@ The efficiency and scalability of this method lay a solid foundation for researc
 - `multi-clustering_voting`: multi-clustering voting
   - `run.sh` : Scripts to run the code.
   - `config.py` : Modify the number of clustering categories.
-  - `model.py` : Modifying the clustering model.
+  - `model.py` : Modify the clustering model.
       ```
       sh run.sh
       ```
