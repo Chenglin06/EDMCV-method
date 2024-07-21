@@ -1,0 +1,6 @@
+predict:0,total:737,real:1,number:24,                        ratio:0.0326
+predict:0,total:737,real:0,number:713,                        ratio:0.9674
+predict:1,total:881,real:1,number:841,                        ratio:0.9546
+predict:1,total:881,real:0,number:40,                        ratio:0.0454
+correct:1554,total number of sample:1618,overall accuracy:0.9604
+reject:90, total number of sample:1708, reject rate:0.0527

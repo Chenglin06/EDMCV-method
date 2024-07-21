@@ -1,0 +1,5 @@
+predict:1,total:848,real:1,number:837,                        ratio:0.9870
+predict:1,total:848,real:0,number:11,                        ratio:0.0130
+predict:0,total:860,real:1,number:78,                        ratio:0.0907
+predict:0,total:860,real:0,number:782,                        ratio:0.9093
+correct:1619,total number of sample:1708,overall accuracy:0.9479
