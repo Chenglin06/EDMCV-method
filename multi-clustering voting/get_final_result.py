@@ -107,8 +107,21 @@ if __name__=="__main__":
     dict_mei = {'NO':'None'}
     for x in open(all_img_path,'r',encoding="utf-8"):
         x,y = x.strip().split('\t')
+        #print(x)
+        #exit()
+        #xx = x.split('<=>')
+        #cs = xx[:5]
+        #mei = xx[5:]
+        #mei_ = []
+        #for x_ in mei:
+        #    if x_=='NO':
+        #        x_ = dict_mei[x_]
+        #    mei_.append(x_)
+        #xxx = cs + mei_
+        #xxx = '<=>'.join(xxx)
         final_x = '\t'.join([x,y])
-
+        #print(final_x)
+        #exit()
         ims_all.append(final_x)
     total_num_pic=len(ims_all)
     
@@ -139,4 +152,16 @@ if __name__=="__main__":
             #os.system("cp %s/%s %s"%(all_img_path,im,rest_file_path))
   #############################
   ################################
-
+'''
+    random_path="result_final/random/0"
+    if glob.glob(random_path)!=[]:
+        os.system("rm -r "+random_path)
+    os.mkdir(random_path)
+    ims_all=[x.split("/")[-1] for x in glob.glob("%s/*"%all_img_path)]
+    random.shuffle(ims_all)
+    for img in ims_all:
+        if random.random()>0.9:
+            cmd ="cp %s/%s %s"%(all_img_path,img,random_path)
+            os.system(cmd)
+'''
+    

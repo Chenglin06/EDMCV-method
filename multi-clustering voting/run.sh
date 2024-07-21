@@ -1,8 +1,8 @@
-
+#cp -r ../encode.txt raw_data
 rm -r result/*
 rm -r 结果/*
 
-python main.py   #
+python main.py
 
 rm -r result_final/bagging/*
 

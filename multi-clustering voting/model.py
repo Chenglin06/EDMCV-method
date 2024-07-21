@@ -58,3 +58,16 @@ class model(object):
             with open("result/%s/%s.txt"%(self.model_type,label),'a',encoding="utf-8")as f:
                 f.write(file_path+'\n')
                 #os.system("cp %s result/%s/%s"%(file_path,self.model_type,label))  
+    '''
+    def show_w(self,file_list):
+        self.label_pred = self.estimator.labels_
+        if glob.glob("result\\%s"%self.model_type)==[]:
+            os.system("mkdir result\\%s"%self.model_type)
+        for label in set(self.label_pred):
+            if glob.glob("result\\%s\\%s"%(self.model_type,label))!=[]:
+                os.system("rm -r result\\%s\\%s"%(self.model_type,label))
+            os.mkdir("result\\%s\\%s"%(self.model_type,label))
+        for file_path,label in zip(file_list,self.label_pred):
+            os.system("cp %s result\\%s\\%s"%(file_path,self.model_type,label))  
+        print(self.label_pred)
+'''

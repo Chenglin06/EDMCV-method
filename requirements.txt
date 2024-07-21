@@ -1,0 +1,12 @@
+fair-esm @ git+https://github.com/facebookresearch/esm.git@2b369911bb5b4b0dda914521b9475cad1656b2ac
+huggingface-hub==0.16.2
+numpy @ file:///home/conda/feedstock_root/build_artifacts/numpy_1649806299270/work
+scikit-learn @ file:///home/conda/feedstock_root/build_artifacts/scikit-learn_1640464152916/work
+pandas==1.1.5
+matplotlib==3.5.3
+tqdm @ file:///home/conda/feedstock_root/build_artifacts/tqdm_1677948868469/work
+torch @ file:///home/conda/feedstock_root/build_artifacts/pytorch-recipe_1608827223281/work
+torchvision @ file:///home/conda/feedstock_root/build_artifacts/torchvision-split_1628597996435/work
+umap==0.1.1
+umap-learn==0.5.5
+

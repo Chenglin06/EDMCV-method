@@ -10,7 +10,17 @@ def load_data(file_):
     file_lst=[]
     for line in open(file_,"r",encoding="utf-8"):
         name,label,da =line.strip().split("\t")
+        #print(name)
+        #exit()
+        #label = name.split('_')[0]
+        #print(label)
+        #pythonexit()
+        #da = [float(i) for i in da.split('<=>')]
         da = eval(da)
+        #da = for i in da.split('<=>')
+        #print(len(da))
+        #xexit()
+        #eval(da) 
         label_='\t'.join([name,label])
         file_lst.append(label_)
         data.append(da)
@@ -19,7 +29,8 @@ def load_data(file_):
 
 
 st=time.time()
-file_lst,data=load_data("../dec_cluster/encode_dec") #Deep Cluster encoding
+#file_lst,data=load_data("../unsupervised/encode.txt") #encode_data_waimai.txt
+file_lst,data=load_data("../dec_cluster/encode_dec") #encode_data_waimai.txt 
 
 #file_lst,data=load_data("raw_data")
 
